@@ -486,7 +486,7 @@ footer {
        }
         .class-card .leftSide label {
           margin-left: 39px;
-          font-family: Mulish;
+          font-family: 'poppins';
           font-style: normal;
           font-weight: 500;
           font-size: 16px;
@@ -500,7 +500,7 @@ footer {
           opacity: 0.7;
        }
         .class-card .leftSide h3 {
-          font-family: Mulish;
+          font-family: 'poppins';
           font-style: normal;
           font-weight: 900;
           font-size: 34px;
@@ -518,17 +518,14 @@ footer {
           
        }
         .class-card .rightSide .title h5 {
-          /* margin-right: 151px; */
           margin-top: 36px;
-          font-family: Mulish;
+          font-family: 'poppins';
           font-style: normal;
           font-weight: normal;
-          font-size: 17px;
+          font-size: 14px;
           line-height: 18px;
-         /* identical to box height */
          text-align: left;
           letter-spacing: 2.1px;
-        
           color: black;
           mix-blend-mode: normal;
           opacity: 0.7;
@@ -540,30 +537,16 @@ footer {
         text-transform: uppercase;
        }
         .class-card .rightSide .title h3 {
-          font-family: Mulish;
+          font-family: 'poppins';
           font-style: normal;
           font-weight: normal;
-          font-size: 30px;
+          font-size: 38px;
           line-height: 35px;
           margin-left: 50px;
           margin-top: 11px;
           color: #2c2760;
        }
-        .class-card .rightSide .progBar {
-          width: 218px;
-          height: 6px;
-          background: #dddbf1;
-          border-radius: 3px;
-          overflow: hidden;
-          margin-top: 39px;
-          margin-left: 44px;
-       }
-        .class-card .rightSide .progBar .bar {
-          width: 140px;
-          height: 6px;
-          background: #2c2760;
-          border-radius: 3px;
-       }
+
         .class-card .rightSide small {
           margin-left: 153px;
           margin-top: 5px;
@@ -582,7 +565,7 @@ footer {
          .class-btn {
           width: 161px;
           height: 40px;
-          background: #938FFF;
+          background: #87e27f;
           box-shadow: 0px 15px 20px -10px rgba(71, 62, 166, 0.552989);
           border-radius: 28.5px;
           display: flex;

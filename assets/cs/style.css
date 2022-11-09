@@ -73,6 +73,7 @@ section {
 .carousel-item-img{
   opacity: 0.69;
   object-fit: cover;
+  /* height: 100%; */
 }
 
 .carousel-caption{
