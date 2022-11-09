@@ -150,16 +150,17 @@ section {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: #5e16bd;
+  background-color: #c7b03d;
   background-image: #0DD391;
-  /* padding: 1rem 2.5rem; */
+  /* padding: 1rem; */
+  box-shadow: #6F6151 10px 10px 10px;
   /* width: 10rem; */
 
   margin-right: 13px;
-  border-radius: 4px;
+  border-radius: 50px;
   border: none;
   color: #fff;
   position: relative;
@@ -206,7 +207,7 @@ section {
 
 .home-btn1:hover,
 .home-btn1:active {
-  transform: translateY(-3px);
+  /* transform: translateY(-3px); */
   color: #fff;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
 }
@@ -545,6 +546,10 @@ section {
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #0DD391;
+}
+
+.flags {
+  height: 30px;
 }
 
 /*--------------------------------------------------------------
@@ -1048,10 +1053,50 @@ form p {
     box-shadow: 0 0 0 rgba(0, 172, 193, 0.4);
     animation: pulse 3s infinite;
  }
-  .map-container .point:hover {
+  /* .map-container .point:hover {
     animation: none;
     transform: translate(-50%, -50%) scale3D(1.35, 1.35, 1);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+ } */
+
+ .map-container span {
+  color:black;
+  /* padding: 1em; */
+  position:absolute;
+  font-family:sans-serif;
+  bottom:0;
+  left:-25px;
+  right:-25px;
+  padding:5px 7px;
+  z-index:-1;
+  font-size:18px;
+  font-weight: 600;
+  border-radius:2px;
+  background:#fff;
+  visibility:hidden;
+  opacity:0;
+  -o-transition:all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+ }
+
+ .map-container span::before{
+  content:'';
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  position:absolute;
+  bottom:-5px;
+  left:40px;
+ }
+
+ .map-container div:hover span {
+  bottom: 50px;
+  visibility: visible;
+  opacity: 1;
  }
   .map-container .india {
     top: 44%;
