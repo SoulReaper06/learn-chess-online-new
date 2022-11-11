@@ -1096,7 +1096,8 @@ form p {
   font-weight: 600;
   border-radius:2px;
   background:#fff;
-  width: auto;
+  width: 100px;
+  text-align: center;
   visibility:hidden;
   opacity:0;
   -o-transition:all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
