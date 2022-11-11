@@ -1510,5 +1510,10 @@ to{border-right-color: transparent;}
 
   }
 
+  .map-container .point{
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+
 
 }
