@@ -71,7 +71,7 @@ section {
 }
 
 .carousel-item-img{
-  opacity: 0.69;
+  opacity: 0.7;
   object-fit: cover;
   /* height: 100%; */
 }
@@ -97,7 +97,6 @@ section {
 
 .slide2-para{
   text-align: center;
-  
   color: black;
   
  
@@ -114,12 +113,15 @@ section {
 
 
 .carousel-caption p {
-  width: 70%;
+  width: 100%;
   margin: auto;
   font-size: 45px;
   text-transform: uppercase;
   line-height: 1.1;
-  font-weight: bold;
+  font-weight: 900;
+  font-family: 'Raleway', sans-serif;
+  
+  /* background-color: black; */
   
 }
 
@@ -408,10 +410,10 @@ section {
 
 
 
-.why-online-section{
+/* .why-online-section{
   padding-left: 100px;
   padding-right: 100px;
-}
+} */
 
 /*--------------------------------------------------------------
 # Stats Counter Section
@@ -942,6 +944,27 @@ form p {
     border-radius: 10px;
   }
 
+  #card-row1{
+    /* background-color: #207297; */
+    display: flex;
+    justify-content: space-evenly;
+    /* justify-content: space-between; */
+    width: 100%;
+    /* padding-right: 10%; */
+
+  }
+
+  @media screen and (max-width:576px){
+    #card-row1{
+      flex-direction: column;
+      height: auto;
+    }
+
+    .flip-card-breaker{
+      height: 20px;
+    }
+  }
+
   @media (max-width: 992px) {
     .flip-card {
       /* background-color: red; */
@@ -1443,4 +1466,48 @@ to{border-right-color: transparent;}
   83.3%, 95.96% {
     transform: translate3d(0, -25%, 0);
  }
+}
+
+
+/* changes */
+.carousel-inner{
+  background-color: #0dd391c4;
+}
+
+.carousel-item img{
+  height: 100%;
+  
+}
+
+@media screen and (max-width: 790px) {
+
+  
+  .carousel-caption{
+    /* background-color: #207297; */
+    /* height: 100%; */
+
+    /* width: 100%; */
+    /* position: absolute; */
+    
+    /* margin-top: 0; */
+  }
+
+  .carousel-caption p{
+    font-size: 35px;
+    /* background-color: #0DD391; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .carousel-caption h5{
+    font-size: 30px;
+    /* background-color: #207297; */
+  }
+
+  .home-btn1:link{
+    font-size: 16px;
+
+  }
+
+
 }
