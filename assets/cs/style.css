@@ -239,10 +239,10 @@ section {
 
 
 .navbar-nav a{
-  font-size: 18px;
+  font-size: 21px;
   text-transform: uppercase;
   font-weight: bold;
-  color: #fff;
+  color: green;
   overflow: hidden;
   color: #262626;
   transition: 1s;
@@ -263,9 +263,8 @@ section {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: red;
   width: 0px;
-  transition: all 0.3s ease-in-out 0s;
+  transition: all 0.1s ease-in-out 0s;
 }
 
 .navbar a:hover:before,
@@ -279,7 +278,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #000;
+    color: white;
   }
 
   .black {
@@ -297,9 +296,10 @@ section {
 }
 
 .btn-book-demo{
-  font-size: 16px;
+  font-size: 17px;
   color: #fff;
-  background:gray;
+  font-weight: 700;
+  background:#565F4F;
   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 40px;
