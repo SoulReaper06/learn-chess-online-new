@@ -115,12 +115,6 @@ a {
     box-shadow: 0 0 0 70px rgba(0, 0, 0, 0);
   }
 }
-
-
-.black {
-  background:rgba(13, 211, 145, 0.986);
-  color: white;
-  }
   
   #why-online-title {
     margin: 20px auto 80px;
@@ -188,7 +182,7 @@ a {
 
 
   .image-container-why-online{
-    /* height: 600px; */
+
     height: 100vh;
     width: 100%;
     
@@ -261,7 +255,7 @@ a {
       /* padding: 20%; */
       justify-content: center;
       align-items: center;
-      max-height: 500px;
+      max-height: 600px;
       
     }
 
@@ -304,52 +298,10 @@ a {
 
   }
 
-  /* .scroll-downs {
-    position: absolute;
-    
-    right: 0;
-    left: 0;
-    bottom: 4%;
-    margin: auto;
-    
-    width :34px;
-    height: 55px;
-  }
-  .mousey {
-    width: 3px;
-    padding: 10px 15px;
-    height: 35px;
-    border: 2px solid #fff;
-    border-radius: 25px;
-    opacity: 0.75;
-    box-sizing: content-box;
-  }
-  .scroller {
-    width: 3px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #fff;
-    animation-name: scroll;
-    animation-duration: 2.2s;
-    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
-    animation-iteration-count: infinite;
-  }
-  @keyframes scroll {
-    0% { opacity: 0; }
-    10% { transform: translateY(0); opacity: 1; }
-    100% { transform: translateY(30px); opacity: 0;}
-  } */
-
-  
-
   /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 
-/* .ftco-section {
-  padding: 12em 0; }
-  .ftco-section h2 {
-    margin-bottom: 0; } */
 footer {
       padding: 2em 0; 
      
@@ -446,6 +398,7 @@ footer {
           border-radius: 15px;
           overflow: hidden;
           display: flex;
+          
        }
         .class-card .leftSide {
           min-width: 322px;
@@ -512,7 +465,7 @@ footer {
        }
         
         .class-card .rightSide {
-          display: flex;
+          /* display: flex; */
           padding: 20px;
           justify-content: center;
           
@@ -613,4 +566,47 @@ footer {
 
       .class-btn:hover {
           transform: scale(1.01);
+       }
+
+
+       @media screen and (max-width:790px) {
+
+        .image-container-text{
+            margin-top: 30px;
+            font-size: 12px;
+        }
+
+        .classes{
+          padding: 100px;
+          /* max-height: 6600px; */
+        }
+
+        .class-card{
+          width: 180%;
+          flex-direction: column;
+          height: auto;
+        }
+
+        .title {
+          max-width: 360px;
+        }
+
+        .rightSide {
+          width: 100px;
+          
+        }
+
+        .title h1 {
+          font-size: 14px;
+          min-width: 316px;
+        }
+
+        .title h5 {
+          font-size: 14px;
+          min-width: 316px;
+        }
+
+        .class-btn{
+          margin: auto;
+        }
        }
