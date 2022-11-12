@@ -18,3 +18,10 @@ var cardsModule = (function() {
   trigger.on("click", animateCard);
   closetrigger.on("click", closeCard);
 })();
+
+
+$("#navbarSupportedContent").on('show.bs.collapse', function() {
+  $('a.nav-link').click(function() {
+      $("#navbarSupportedContent").collapse('hide');
+  });
+});
