@@ -12,7 +12,7 @@ footer {
   .footer-07 a {
     color: #ffffff;
     text-decoration: none;
-   }
+  }
   .footer-07 p {
     color: rgba(255, 255, 255, 0.3); }
   .footer-07 .footer-heading {
@@ -29,6 +29,10 @@ footer {
       margin: 0 10px;
       text-transform: uppercase;
       letter-spacing: 1px; }
+
+      .footer-07 .menu a:hover{
+        color: #fff;
+      }  
   .footer-07 .ftco-footer-social li a {
     background: transparent;
     border: 1px solid rgb(1, 210, 142); } /*color of socials border*/
@@ -56,7 +60,9 @@ footer {
           transform: translate(-50%, -50%); }
         .ftco-footer-social li a:hover {
           color: #fff; }
-    
+    .footer-07 .ftco-footer-social li a:hover{
+      background-color: rgb(255, 255, 255);
+    }
 
     .copyright a{
       color: rgb(1, 210, 142); /*color of copyright*/

@@ -22,51 +22,6 @@ a {
   text-decoration: none;
 }
 
-
-.navbar-nav a{
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #fff;
-  overflow: hidden;
-  color: #262626;
-  transition: 1s;
-}
-
-.navbar-light .navbar-brand{
-  color: #262626;
-  font-size: 22px;
-  text-transform: uppercase;
-  font-weight: bold;
- letter-spacing: 2px;
-}
-
-.navbar>ul>li>a:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: -6px;
-  left: 0;
-  background-color: red;
-  width: 0px;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.navbar a:hover:before,
-  .navbar li:hover>a:before,
-  .navbar .active:before {
-    visibility: visible;
-    width: 100%;
-  }
-
-  .navbar a:hover,
-  .navbar .active,
-  .navbar .active:focus,
-  .navbar li:hover>a {
-    color: #000;
-  }
-
   .black {
     background:rgba(13, 211, 145, 0.986);
     color: white;
@@ -74,48 +29,6 @@ a {
 .black ul{
   color: white;
 }
-
-.navbar-logo{
-  height: 35px;
-  padding-bottom: 5px;
-}
-
-.btn-book-demo{
-  font-size: 14px;
-  color: #fff;
-  background: #262626;
-  padding: 8px 20px;
-  margin-left: 30px;
-  border-radius: 40px;
-  transition: 0.3s;
-  animation: shadow-pulse 2s infinite;
-}
-
-.btn-book-demo:hover,
-.btn-book-demo:focus:hover{
-  color: #fff;
-}
-
-@keyframes shadow-pulse
-{
-  0% {
-    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
-  }
-  100% {
-    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
-  }
-}
-
-@keyframes shadow-pulse-big
-{
-  0% {
-    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.1);
-  }
-  100% {
-    box-shadow: 0 0 0 70px rgba(0, 0, 0, 0);
-  }
-}
-  
   #why-online-title {
     margin: 20px auto 80px;
     font-size: 38px;
@@ -127,58 +40,6 @@ a {
     font-family: "Poppins";
     /* color: antiquewhite; */
   }
-
-  .points-container{
-    /* background-color: rgba(0, 0, 0, 0.863); */
-    /* background-image: url("image3.jpg"); */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: fixed;
-    
-    }
-  
-    .filler1{
-      /* background-color: rgba(30, 79, 170, 0.589); */
-      background-size: contain;
-      max-height: 300px;
-      height: 300px;
-      
-      text-align: center;
-      justify-content: center;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 95%;
-      background-image: url("business-strategy-making-team\ \(1\).png");
-    }
-    .filler2{
-      /* background-color: rgba(30, 79, 170, 0.589); */
-      background-size: contain;
-      max-height: 300px;
-      height: 300px;
-      text-align: center;
-      justify-content: center;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 95%;
-      background-image: url("WhatsApp\ Image\ 2022-09-04\ at\ 9.14.50\ PM.jpeg");
-    }
-
-    .filler3{
-      /* background-color: rgba(30, 79, 170, 0.589); */
-      background-size: contain;
-      max-height: 300px;
-      height: 300px;
-      text-align: center;
-      justify-content: center;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 75%;
-      background-image: url("4b4dd844-f2e6-4f00-a78b-2cc00bbc2960.png");
-    }
-
-    .filler img{
-      width: 100%;
-    }
 
 
   .image-container-why-online{
@@ -281,10 +142,7 @@ a {
     }
 
     .image-container-text p{
-      /* justify-content: center;
-      vertical-align: center;
-      align-items: center; */
-      /* padding-top: 10%; */
+  
       width: 80%;
       margin: auto;
       text-align: center;
@@ -375,13 +233,8 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: auto;
-        /* background: rgb(13,211,145);
-            background: radial-gradient(circle, rgba(13,211,145,1) 38%, rgba(0,212,255,1) 100%);
-        /* background: -webkit-linear-gradient(to bottom, #938FFF, #0DD391); Chrome 10-25, Safari 5.1-6 */
-        /* background: linear-gradient(to bottom, #938FFF, #0DD391); */
-        /* background-image: url(../img/background1.jpg);
-       background-size: cover; */
+       
+        
       }
 
       .classes .heading {
@@ -398,7 +251,7 @@ footer {
           border-radius: 15px;
           overflow: hidden;
           display: flex;
-          
+
        }
         .class-card .leftSide {
           min-width: 322px;
@@ -466,6 +319,8 @@ footer {
         
         .class-card .rightSide {
           /* display: flex; */
+          width: auto;
+          overflow: hidden;
           padding: 20px;
           justify-content: center;
           
@@ -482,23 +337,16 @@ footer {
           color: black;
           mix-blend-mode: normal;
           opacity: 0.7;
+          min-width: 120px;
        }
 
        .subheading {
         font-size: 18px;
         text-align: left;
         text-transform: uppercase;
+
        }
-        .class-card .rightSide .title h3 {
-          font-family: 'poppins';
-          font-style: normal;
-          font-weight: normal;
-          font-size: 38px;
-          line-height: 35px;
-          margin-left: 50px;
-          margin-top: 11px;
-          color: #2c2760;
-       }
+     
 
         .class-card .rightSide small {
           margin-left: 153px;
@@ -567,13 +415,21 @@ footer {
       .class-btn:hover {
           transform: scale(1.01);
        }
+/* 
+       @media screen and (min-width: 360px) {
+        .title h1 {
+          font-size: 14px;
+          min-width: 290px;
+        }
+        
+       } */
 
 
-       @media screen and (max-width:790px) {
+       @media only screen and (min-width: 320px) and (max-width: 480px) {
 
         .image-container-text{
-            margin-top: 30px;
-            font-size: 12px;
+            margin-top: 20px;
+            font-size: 11px;
         }
 
         .classes{
@@ -597,11 +453,13 @@ footer {
         }
 
         .title h1 {
+          width: auto;
           font-size: 14px;
-          min-width: 316px;
+          min-width: 240px;
         }
 
         .title h5 {
+          width: auto;
           font-size: 14px;
           min-width: 316px;
         }
@@ -609,4 +467,36 @@ footer {
         .class-btn{
           margin: auto;
         }
+
+      
+
+        
        }
+
+       @media only screen and (min-width: 768px) and (max-width: 1024px) {
+          
+        .class-card{
+          width: 90%;
+          height: auto;
+          overflow: hidden;
+        }
+
+        .class-card .leftSide {
+          height: 306px;
+        }
+        
+        .title h1 {
+          width: auto;
+          font-size: 14px;
+          min-width: 240px;
+        }
+
+        .title h5 {
+          width: auto;
+          font-size: 14px;
+          min-width: 316px;
+       }
+       .class-btn{
+        margin: auto;
+      }
+      }

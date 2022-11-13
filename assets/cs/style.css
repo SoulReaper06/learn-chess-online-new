@@ -837,7 +837,8 @@ form p {
     .footer-07 {
       background: #121212; }
       .footer-07 a {
-        color: #ffffff; }
+        color: #ffffff; 
+      }
       .footer-07 p {
         color: rgba(255, 255, 255, 0.3); }
       .footer-07 .footer-heading {
@@ -888,6 +889,9 @@ form p {
           text-decoration: none; /*color of copyright*/
         }
 
+         .footer-07 .menu a:hover{
+      color: white;
+    }
 
         .card{
     margin: 10px auto;
@@ -1322,7 +1326,6 @@ to{border-right-color: transparent;}
 
   .navbar {
    background-color:#0DD391;
-   justify-items: center;
   }
 
   .btn-book-demo {
@@ -1360,20 +1363,6 @@ to{border-right-color: transparent;}
     font-size: 16px;
 
   }
-
-  /* .count1 {
-    padding-left: 100px;
-  }
-  .count1-1 {
-    padding-left: 110px;
-  }
-  .count2 {
-    padding-left: 82px;
-  }
-  .count2-1 {
-    padding-left: 112px;
-  } */
-
   .map-container .point{
     width: 0.5rem;
     height: 0.5rem;
@@ -1389,6 +1378,15 @@ to{border-right-color: transparent;}
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
 
+  .navbar {
+    background-color:#0DD391;
+   }
+ 
+
+  .btn-book-demo {
+    display: none;
+  }
+
   .count1 {
     padding-left: 90px;
   }
@@ -1401,9 +1399,20 @@ to{border-right-color: transparent;}
   .count2-1 {
     padding-left: 112px;
   }
+
+ 
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  .navbar {
+    background-color:#0DD391;
+   }
+ 
+
+  .btn-book-demo {
+    display: none;
+  }
 
   .carousel-caption p{
     font-size: 45px;
@@ -1411,7 +1420,7 @@ to{border-right-color: transparent;}
 
   .carousel-caption h5{
     font-size: 40px;
-  } 
+  }
 
   .slide2{
     margin-bottom: 280px;
