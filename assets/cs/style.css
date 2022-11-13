@@ -1372,6 +1372,10 @@ to{border-right-color: transparent;}
     right: -3px;
     bottom: -2px;
   }
+
+  .jumbotron h1 {
+    font-size: 26px;
+  }
  
 
 }
