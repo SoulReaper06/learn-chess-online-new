@@ -421,17 +421,18 @@ section {
 --------------------------------------------------------------*/
 
 .count1 {
-  display:flex; 
-  padding-left: 75px;
+  display:flex;
+  justify-content: center;
+ 
 }
 .count2 {
   display:flex; 
-  padding-left: 56px;
+  justify-content: center;
 }
 .stats-counter {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/banner.webp") center center;
   background-size: cover;
-  padding: 100px 0;
+  /* padding: 100px 0; */
 }
 
 @media (min-width: 1365px) {
@@ -443,6 +444,9 @@ section {
 .stats-counter .stats-item {
   padding: 30px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .stats-counter .stats-item span {
@@ -1306,7 +1310,7 @@ to{border-right-color: transparent;}
   
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
 
   html ,body{
     overflow-x: hidden;
@@ -1324,7 +1328,6 @@ to{border-right-color: transparent;}
   .btn-book-demo {
     display: none;
   }
-
   .section-header p{
     font-size: 40px;
   }
@@ -1338,7 +1341,19 @@ to{border-right-color: transparent;}
 
   .carousel-caption h5{
     font-size: 30px;
- 
+  }
+
+  .card-row1{
+    display: flex;
+    flex-direction: column;
+  }
+  .qty-learning{
+    font-size: 14px;
+  }
+  
+
+  .fc5 {
+    margin-top: 30px;
   }
 
   .home-btn1:link{
@@ -1346,7 +1361,7 @@ to{border-right-color: transparent;}
 
   }
 
-  .count1 {
+  /* .count1 {
     padding-left: 100px;
   }
   .count1-1 {
@@ -1357,7 +1372,7 @@ to{border-right-color: transparent;}
   }
   .count2-1 {
     padding-left: 112px;
-  }
+  } */
 
   .map-container .point{
     width: 0.5rem;
@@ -1369,5 +1384,62 @@ to{border-right-color: transparent;}
     bottom: -2px;
   }
  
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+
+  .count1 {
+    padding-left: 90px;
+  }
+  .count1-1 {
+    padding-left: 100px;
+  }
+  .count2 {
+    padding-left: 82px;
+  }
+  .count2-1 {
+    padding-left: 112px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  .carousel-caption p{
+    font-size: 45px;
+  }
+
+  .carousel-caption h5{
+    font-size: 40px;
+  } 
+
+  .slide2{
+    margin-bottom: 280px;
+  }
+
+  .home-btn1 {
+    margin-bottom: 280px;
+  }
+
+
+  .flip-card{
+    width: 200px;
+    height: 200px;
+  }
+  
+  .flip-card-front h1{
+    font-size: 1.1rem;
+  }
+
+  .flip-card-back h1 {
+    font-size: 14px;
+  }
+
+  .flip-card-back p {
+    font-size: 13px;
+  }
+
+ 
+
 
 }
