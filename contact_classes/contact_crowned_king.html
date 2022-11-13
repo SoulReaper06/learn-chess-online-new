@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Contact | learnchess.online</title>
+	<link rel="icon" href="images/LCO-logo.png" type="image/icon type">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<!-- icons -->
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+	<!-- script -->
+	<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+  	
+	<!-- bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+	
+	
+	
+	<!-- css files -->
+	<link rel="stylesheet" href="css/contactPageStyle.css">
+	<link rel="stylesheet" href="../assets/cs/style.css" >
+	<link rel="stylesheet" href="../assets/cs/footerStyle.css">
+
+
+</head>
+	<body>
+
+		
+		<!-- navbar section  -->
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+			<div class="container-fluid">
+	  
+			  <a class="navbar-brand" href="#">
+				<img src="images/LCO_logo_black.svg" alt="" class="navbar-logo"></a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  About
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					  <li><a class="dropdown-item" href="../why_online/index.html">why online</a></li>
+					  <li><a class="dropdown-item" href="../why_chess/index.html">why chess</a></li>
+					  <li><a class="dropdown-item" href="../About-Us/index.html">About us</a></li>
+					</ul>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="../our_classes/index.html">Classes</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="../our_team/index.html">Our Team</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="../contact_classes/contact_main.html">Contact</a>
+				  </li>
+				 
+		  
+				</ul>
+
+			  </div>
+			</div>
+		  </nav>
+
+
+		<!--  end navbar section -->
+		<!-- <br>
+		<br>
+		<br>  -->
+		<div class="jumbotron" id="below-navbar">
+			<h1>Thanks for your interest in</h1>
+			<h1><span style="font-weight: bold;">learnchess.online!</span></h1>
+			<p>Submit this form and our sales representative will contact you soon</p>
+		</div>
+		<div class="below-navbar-overlay">
+				<!-- <span>this is ti</span> -->
+		</div>
+		
+	<section class="ftco-section">
+		<div class="container">
+			<!-- <div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Contact Form #02</h2>
+				</div>
+			</div> -->
+			<div class="row justify-content-center">
+				<div class="col-md-14">
+					<div class="wrapper">
+						<div class="row no-gutters">
+							<div class="col-lg-6 col-md-7 order-md-last d-flex align-items-stretch">
+								<div class="contact-wrap w-100 p-md-5 p-4">
+									<h1 class="mb-0">Get in touch</h1>
+									<h4 class="mb-4" style="font-weight: 100; color:rgba(128, 128, 128, 0.733) ;">Feel free to contact us to clear your doubts</h3>
+									<div id="form-message-warning" class="mb-4"></div> 
+				      		<div id="form-message-success" class="mb-4">
+				            Your message was sent, thank you!
+				      		</div>
+									<form method="POST" id="contactForm" name="contactForm" class="contactForm" action="php/mailer.php">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<label class="label" for="name">Full Name</label>
+													<input type="text" class="form-control" name="name" id="name" placeholder="Name">
+													<span id="name-prompt"></span>
+												</div>
+											</div>
+											<!-- <div class="col-md-6">
+												<div class="form-group">
+													<label class="label" for="name">Last Name</label>
+													<input type="text" class="form-control" name="name" id="name" placeholder="Last Name">
+												</div>
+											</div> -->
+											<div class="col-md-6">
+												<div class="form-group">
+													<label class="label" for="age">Student's Age</label>
+													<input type="number" class="form-control" name="age" id="age" placeholder="Age" >
+													<span id="age-prompt"></span>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="label" for="whatsapp">Whatsapp Number</label>
+													<input type="text" class="form-control" name="number" id="number" placeholder="Number" >
+													<span id="number-prompt"></span>
+												</div>
+											</div>
+											<div class="col-md-12"> 
+												<div class="form-group">
+													<label class="label" for="email">Email Address</label>
+													<input type="email" class="form-control" name="email" id="email" placeholder="Email" >
+													<span id="email-prompt"></span>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="label" for="subject">Preferred Course</label>
+													<!-- <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"> -->
+													<select id="choice" class="form-control" name="subject" >
+														<option value="0" class="placeholder"  hidden>Select Course</option>
+														<option value="PLayful Pawn">Playful Pawn (Absolute Beginner)</option>
+														<option value="Nimble Knights">Nimble Knight (Post Beginner)</option>
+														<option value="Bright Bishop">Bright Bishop (Intermediate level 1)</option>
+														<option value="Rampant Rooks">Rampant Rooks (Intermediate level 2)</option>
+														<option value="Mighty Queen">Mighty Queen (Professional)</option>
+														<option value="Crowned King" selected="selected">Crowned King (Expert)</option>
+													</select>
+													
+												</div>
+												<span id="course-prompt"></span>
+											</div>
+						
+											<!-- <div class="col-md-12">
+												<div class="form-group">
+													<label class="label" for="subject">Class Type</label>
+													<select id="choice2" class="form-control" name="subject">
+														<option value="0" class="placeholder" selected="selected"  hidden>Select a class type</option>
+														<option value="Beginners">Beginners</option>
+														<option value="Post Beginners">Post Beginners</option>
+														<option value="Intermediate">Intermediate</option>
+														<option value="Advanced Level 1">Advanced Level 1</option>
+														<option value="Advanced Level 2">Advanced Level 2</option>
+														<option value="Expert">Expert</option>
+														
+													</select>
+												</div>
+											</div> -->
+											<div class="col-md-12"> 
+												<div class="form-group">
+													<label class="label" id="msg-label" for="message">Message</label>
+													<textarea type="text" class="form-control" id="message" name="msg"  placeholder="Type your Message" rows="4"></textarea>
+												</div>
+											</div>
+									
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="submit" value="Send Message" class="btn btn-primary" onclick="return validateForm()">
+													<div class="submitting"></div>
+													<span id="submit-prompt"></span>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-5 d-flex align-items-stretch" class="left-side-info">
+								<div class="color-overlay"></div>
+								
+								<div class="info-wrap bg-primary w-100 p-md-5 p-4" >
+									<h3>Let's get in touch</h3>
+									<p class="mb-4">We're open for any suggestion or just to have a chat</p>
+									
+				        			<!-- <div class="dbox w-100 d-flex align-items-start">
+				        				<div class="icon d-flex align-items-center justify-content-center">
+				        					<span class="fa fa-map-marker"></span>
+				        				</div>
+				        			<div class="text pl-3">
+					            <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+					          	</div>
+				           </div> -->
+				        	<div class="dbox w-100 d-flex align-items-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-phone"></span>
+				        		</div>
+				        		<div class="text pl-3">
+					            <p><span>Phone:</span> <a href="tel://1234567920">+91 8089922828</a></p>
+					          </div>
+				          </div>
+				        	<div class="dbox w-100 d-flex align-items-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-paper-plane"></span>
+				        		</div>
+				        		<div class="text pl-3">
+					            <p><span>Email:</span> <a href="mailto:info@yoursite.com">learnchessonline64@gmail.com</a></p>
+					          </div>
+				          </div>
+				        	<!-- <div class="dbox w-100 d-flex align-items-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-globe"></span>
+				        		</div>
+				        		<div class="text pl-3">
+					            <p><span>Website</span> <a href="#">yoursite.com</a></p>
+					          </div>
+				          </div> -->
+			          </div>
+					</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<br>
+	<br>
+	<br>
+	
+	<footer class="footer-07">
+		<div class="container">
+		  <div class="row justify-content-center">
+			<div class="col-md-12 text-center">
+			  <h2 class="footer-heading"><a href="#" class="logo"><img src="images/LCO_logo_colour.svg" alt="" class="footer-logo" width="300em"></a></h2>
+			  <p class="menu">
+				<a href="../index.html">Home</a>
+				<a href="../About-Us/index.html">About us</a>
+				<a href="../why_chess/index.html">why_chess</a>
+				<a href="../why_online/index.html">why_chess Online</a>
+				<a href="../our_classes/index.html">Classes</a>
+				<a href="../our_team/index.html">Our Team</a>
+				<a href="../contact_classes/contact_main.html">Contact</a>
+			  </p>
+			  <ul class="ftco-footer-social p-0">
+				<li class="ftco-animate"><a href="https://www.linkedin.com/company/learnchessonline" data-toggle="tooltip" data-placement="top" title="Facebook"><span
+				  class="fa-brands fa-linkedin"></span></a></li>
+				<li class="ftco-animate"><a href="https://www.instagram.com/learnchess.online/" data-toggle="tooltip" data-placement="top" title="Instagram"><span
+					  class="fa-brands fa-instagram"></span></a></li>
+				<li class="ftco-animate"><a href="https://www.youtube.com/channel/UC6H0Qk4NI8LGc3kAfuqLalQ" data-toggle="tooltip" data-placement="top" title="Website"><span
+					  class="ion-social-youtube"></span></a></li>
+				<li class="ftco-animate"><a href="https://api.whatsapp.com/send?phone=918089922828" data-toggle="tooltip" data-placement="top" title="Whatsapp"><span
+					  class="ion-social-whatsapp"></span></a></li>
+			  </ul>
+			</div>
+		  </div>
+		  <div class="row mt-5">
+			<div class="col-md-12 text-center">
+			  <p class="copyright">
+				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				Copyright &copy;
+				<script>document.write(new Date().getFullYear());</script>  <a href="../index.html">learnchess.online</a>. All rights reserved.
+				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+			  </p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+	
+
+	
+	<script>
+		$(window).on('scroll',function() {
+		  if($(window).scrollTop()){
+		$('nav').addClass('black');
+	  }else{    
+		$('nav').removeClass('black');
+	  }
+	});
+	  </script>
+  <script src="js/contact-form.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <!-- <script src="js/main.js"></script> -->
+  
+  
+ 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
+	</body>
+</html>
+

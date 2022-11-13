@@ -1,0 +1,631 @@
+.about-us-hero{
+    height: 100vh;
+    /* background-color: aquamarine; */
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    background-color: rgba(13, 211, 145, 0.986);
+    /* top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+    
+}
+
+.black {
+    background:rgba(13, 211, 145, 0.986);
+    color: white;
+}
+
+
+#about-us-image-container{
+    /* display: absolute; */
+    width: 100%;
+    height: 100%;
+    /* background-image: url("hero.png"); */
+    /* background-size: 100%; */
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    bottom: 0;
+    /* position: absolute; */
+    
+}
+
+#hero{
+    width: 80%;
+    bottom: 0;
+    /* margin-top: 24.5vh; */
+    justify-content: center;
+    margin: auto;
+    position: absolute;
+    top: 10%;
+    /* scale: 0.70; */
+    /* position: relative; */
+    /* background-color: black; */
+    padding-left: 20%;
+    overflow: hidden;
+}
+
+
+
+
+
+#about-us-image-container h1{
+    position: absolute;
+    
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    color: rgb(38,50,56);
+    font-size: 5rem;
+    font-weight: 900;
+    z-index: 10;
+    padding: 1%;
+
+
+    animation: text-pop-up-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1 both;
+
+}
+
+@keyframes text-pop-up-top {
+  0% {
+    transform: translateY(0);
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    transform: translateY(-10px);
+    transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 30px 30px rgba(0, 0, 0, 0.3);
+  }
+} 
+
+#about-us-image-container p{
+    display: none;
+}
+
+
+
+/* 
+.about-us-inner-container{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(4, 235, 158, 0.795);
+    opacity: 0.6;
+    font-family: "poppins";
+    font-weight: bolder;
+} */
+
+
+.about-us{
+    height: 65vh;
+    /* height: 500px; */
+    padding-top: 8%;
+    /* background-color: aqua; */
+    height: auto;
+    padding-bottom: 6%;
+}
+
+.about-us h1{
+    color: rgba(0, 0, 0, 0.301);
+    font-size: 3.5em;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    font-family: "poppins";
+    padding-bottom: 1%;
+    font-weight: 900;
+
+}
+
+.about-us p{
+    font-size: 1.2em;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: "poppins";
+}
+
+#vision-image{
+    width: 50%;
+    min-width: 500px;
+    float: left;
+    z-index: 10;
+    padding-left: 5%;
+    position: relative;
+    max-width: 1000px;
+    /* background-color: aqua; */
+    padding-top: 0%;
+}
+
+#vision-filler{
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    /* background-color: rgba(163, 27, 27, 0.986); */
+}
+
+.vision-text{
+    position: relative;   
+    margin-top: 250px;
+    background-color: rgba(13, 211, 145, 0.986);
+    width: 100%;
+    height: 450px;
+    padding-top: 3%;
+    color: black;
+    font-family: "poppins";
+    padding-left: 53%;
+}
+
+.vision-text h1{
+    /* padding-left: 53%; */
+    /* background-color: black; */
+    font-size: 5em;
+    /* text-align: center; */
+    font-weight: 900;
+    /* color: rgba(0, 0, 0, 0.897);
+     */
+    color: rgba(0, 0, 0, 0.801);
+
+    
+}
+
+.vision-text p{
+    font-size: 1.3em;
+    /* text-align: center; */
+    padding-top: 2%;
+    /* background-color: black; */
+    padding-right: 10%;
+    color: rgba(56, 56, 56, 0.973);
+    padding-bottom: 2em;
+}
+
+.mission-filler{
+    height: 300px;
+    width: 100%;
+    position: absolute;
+  background-color: rgba(13, 211, 145, 0.986);
+  /* background-color: blue; */
+}
+
+#mission-image{
+    width: 50%;
+    float: right;
+    z-index: 10;
+    padding-right: 4%;
+    position: relative;
+    max-width: 1000px;
+    /* background-color: aqua; */
+    padding-top: 1%;
+}
+
+.mission-text{
+    position: relative;   
+    margin-top: 300px;
+    background-color: rgba(255, 255, 255, 0.123);
+    width: 100%;
+    height: 600px;
+    padding-top: 3%;
+    color: black;
+    font-family: "poppins";
+    padding-left: 5%;
+    padding-bottom: 200px;
+    /* background-color: aqua; */
+    
+}
+
+.mission-text h1{
+    /* background-color: blue; */
+    font-size: 5em;
+    /* text-align: center; */
+    font-weight: 900;
+    width: 50%;
+    color: rgba(0, 0, 0, 0.801);
+
+}
+
+.mission-text p{
+    width: 45%;
+    font-size: 1.3em;
+    padding-top: 2%;
+    color: rgba(56, 56, 56, 0.973);
+}
+
+.filler{
+    height: 200px;
+    background-color: aqua;
+}
+
+
+@media screen and  (max-width: 1020px){
+    #hero{
+        /* background-color: black; */
+        width: 100%;
+        padding-left: 0%;
+        
+    }
+
+    #vision-image{
+        float: none;
+        width: 50%;
+        /* background-color: black; */
+        margin-left: auto;
+        margin-right: auto;
+        margin-left: 5%;
+        
+    }
+    .vision-text{
+        float: none;
+        margin-top: 10px;
+        /* height: 100px; */
+        padding-top: 3%;
+        padding-left: 0;
+        /* background-color: rgba(38, 0, 255, 0.726); */
+        width: 100%;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-bottom: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 500px;
+
+    }
+
+    #vision-filler{
+        /* background-color: aqua; */
+        height: 200px;
+    }
+
+    #mission-image{
+        float: none;
+    }
+
+    .mission-filler{
+        background-color: white;
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width:566px){
+    /* #about-us-image-container h1{
+        font-size: 4rem;
+        padding: 5%;
+        /* color: white; */
+    /* }
+
+    #hero{
+        padding-top: 25%;
+    } */ 
+
+    .about-us p{
+        font-size: 1em;
+    }
+
+    .about-us h1{
+        font-size: 3em;
+    }
+
+    .about-us{
+        padding-top: 10%;
+        height: 300px;
+    }
+
+    #vision-image{
+        margin-left: 2%;
+        width: 45%;
+        min-width: 350px;
+        padding-top: 10%;
+        /* background-color: yellow; */
+    }
+
+    .vision-text h1{
+        font-size: 2.8em;
+        width: 100%;
+    }
+    .vision-text p{
+        font-size: 1em;
+        width: 100%;
+    }
+
+    .vision-text{
+        height: 500px;
+        padding-top: 3%;
+    }
+
+    #mission-image{
+        width: 90%;
+        margin: 5%;
+       
+    }
+
+    .mission-text{
+        background-color: rgba(13, 211, 145, 0.986);
+        margin-top: 0;
+        height: auto;
+        padding: 1em;
+        
+    }
+
+    .mission-text h1{
+        font-size: 3em;
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    .mission-text p{
+        font-size: 1em;
+        width: 85%;
+        padding-left: 10%;
+    }
+
+    .mission-filler{
+        margin: 0;
+        height: 0%;
+    }
+}
+@media screen and (max-width: 380px){
+    #about-us-image-container h1{
+        font-size:30px;
+        padding-top: 35%;
+    }
+
+}
+
+@media screen and (max-width: 760px) and (min-width:380px){
+    #about-us-image-container h1{
+        font-size: 250%;
+        padding-top: 10%;
+    }
+}
+
+@media screen and (max-width: 760px){
+    #hero{
+        /* background-color: rgb(189, 131, 131); */
+        margin-top: 20%;
+    }
+
+    #about-us-image-container{
+        /* background-color: rgb(95, 95, 95); */
+        vertical-align: middle;
+        justify-content: center;
+        align-items: center;
+       
+
+    }
+
+   
+}
+
+@media screen and (max-width:420px){
+
+    #about-us-image-container p{
+        /* background-color: aqua; */
+        margin-top: 60vh;
+        position: absolute;
+        display: block;
+        padding: 1em;
+        text-align: center;
+        font-family: "Poppins";
+    }
+
+    .about-us{
+        display: none;
+    }
+
+    #vision-image{
+        padding-top: 100px;
+    }
+
+    .vision-text{
+        height: auto;
+    }
+
+    
+}
+
+@media screen and (min-width: 566px) and (max-width: 1020px) {
+    .mission-text{
+        margin-top: 0%;
+        width: 100%;
+        padding-left: 15%;
+        padding-right: 15%;
+        
+    }
+
+    .mission-text h1{
+        width: 100%;
+    }
+    .mission-text p{
+        width: 100%;
+    }
+
+    #mission-image{
+        width: 60%;
+        margin-left: 20%;
+    }
+    
+}
+
+
+
+  
+.mouse_scroll {
+	/* display: block; */
+	/* margin: 0 auto; */
+  /* top: 10%; */
+  padding-top: 90vh;
+	width: 24px;
+	height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+	/* margin-top: 55%; */
+  /* margin-bottom: 0%;
+  align-items: flex-end;
+  background-color: aqua; */
+}
+
+
+.m_scroll_arrows
+{
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+   
+  border-right: 2px solid rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(0, 0, 0);
+  margin: 0 0 3px 4px;
+  
+  width: 16px;
+  height: 16px;
+}
+
+
+.unu
+{
+  margin-top: 1px;
+}
+
+.unu, .doi, .trei
+{
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+    animation: mouse-scroll 1s infinite;
+  
+}
+
+.unu
+{
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+  
+  animation-direction: alternate;
+  animation-delay: alternate;
+}
+
+.doi
+{
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+  
+  animation-delay: .2s;
+  animation-direction: alternate;
+  
+  margin-top: -6px;
+}
+
+.trei
+{
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -webkit-animation-direction: alternate;
+  
+  animation-delay: .3s;
+  animation-direction: alternate;
+  
+  
+  margin-top: -6px;
+}
+
+.mouse {
+  height: 42px;
+  width: 24px;
+  border-radius: 14px;
+  transform: none;
+  border: 2px solid rgb(0, 0, 0);
+  top: 170px;
+}
+
+.wheel {
+  height: 5px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background: rgb(0, 0, 0);
+  position: relative;
+  
+  height: 4px;
+  width: 4px;
+  border: 2px solid rgb(0, 0, 0);
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+}
+
+.wheel {
+  -webkit-animation: mouse-wheel 0.6s linear infinite;
+  -moz-animation: mouse-wheel 0.6s linear infinite;
+  animation: mouse-wheel 0.6s linear infinite;
+}
+
+@-webkit-keyframes mouse-wheel{
+   0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+@-moz-keyframes mouse-wheel {
+  0% { top: 1px; }
+  25% { top: 20px; }
+  50% { top: 30px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+@-o-keyframes mouse-wheel {
+
+   0% { top: 1px; }
+  25% { top: 20px; }
+  50% { top: 30px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+@keyframes mouse-wheel {
+
+   0% { top: 1px; }
+  25% { top: 5px; }
+  50% { top: 10px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+
+@-webkit-keyframes mouse-scroll {
+
+  0%   { opacity: 0;}
+  50%  { opacity: .5;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@-o-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
