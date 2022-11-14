@@ -1376,7 +1376,17 @@ to{border-right-color: transparent;}
   .jumbotron h1 {
     font-size: 26px;
   }
- 
+
+  #contact_number , #contact_email{
+    font-size:16px;
+  }
+
+
+  .info-wrap .dbox .icon {
+    margin-bottom: 36px;
+  }
+
+  
 
 }
 
@@ -1403,6 +1413,19 @@ to{border-right-color: transparent;}
   .count2-1 {
     padding-left: 112px;
   }
+
+  #contact_number , #contact_email{
+    font-size:13px;
+  }
+  .info-wrap {
+    padding: 78px;
+  }
+
+  .info-wrap .dbox .icon{
+    height: 0px;
+    width: 0;
+  }
+
 
  
 }
@@ -1452,7 +1475,19 @@ to{border-right-color: transparent;}
     font-size: 13px;
   }
 
- 
+  #contact_details{
+    font-size:13px;
+  }
+
+  .info-wrap {
+    padding: 78px;
+  }
+
+  .info-wrap .dbox .icon{
+    height: 0px;
+    width: 0;
+  }
+
 
 
 }
