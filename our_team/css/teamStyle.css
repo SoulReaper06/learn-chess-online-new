@@ -98,11 +98,12 @@
 
   .image-container-text p{
     margin-top: 20px;
-    font-weight: 450;
+    font-weight: 350;
     font-family: "Poppins";
-    font-size: 1.1em;
+    font-size: 1.15em;
     font-style: italic;
-    color: #000000b3;
+    color: #000000;
+    font-style: italic;
   }
 
   .meet-team{
@@ -206,8 +207,10 @@
 .our-team .pic{
     overflow: hidden;
     position: relative;
-    max-width: 200%;
+    /* max-width: 200%; */
     max-height: 350px;
+    max-width: 450px;
+
   
 }
 .our-team .pic:before,
@@ -234,16 +237,37 @@
 .our-team .pic img{
     width: 100%;
     height: auto;
-    /* min-height: 400px; */
+    max-height: 290px;
+    /* min-height: 290px; */
+    min-height: 400px;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 576px) {
   .pic img{
-    width: 1000px;  
+    width: 100%;  
     height: 1000px;
+    /* min-height: 1000px; */
     background-color: aqua;
   }
 }
+
+
+
+@media screen and (min-width: 1400px) {
+  #vishnu-pic{
+    width: 100%;
+    height: 100px;
+  }
+  
+}
+
+@media screen and (min-width:577px) and (max-width:991px){
+  .team-content ul{
+    padding-left: 9px;
+    font-size: 13px;
+  }
+}
+
 
 .our-team .social{
     width: 100%;
@@ -269,6 +293,7 @@
     margin-right: 10px;
     position: relative;
     transition: all 0.3s ease 0s;
+    text-decoration: none;
 }
 .our-team .social li a:after{
     content: "";
