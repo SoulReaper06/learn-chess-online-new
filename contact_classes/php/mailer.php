@@ -1,7 +1,6 @@
-<!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+
 
 <?php
-    //define('CDN', 'https://unpkg.com/sweetalert/dist/sweetalert.min.js');
     
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
@@ -11,20 +10,20 @@
     require 'PHPMailer-master/src/SMTP.php';
 
     $mail = new PHPMailer();
-    //$mail->SMTPDebug = 5;
+   
     
     $mail->isSMTP();
 
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'joelcrajudeveloper@gmail.com';
-    $mail->Password = 'ijqnzsxenlwoyhtv';
+    $mail->Username = 'abc@gmail.com'; //enter email address of hosting site
+    $mail->Password = 'password'; //enter email password
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
 
-    $mail->setFrom('joelcrajudeveloper@gmail.com','learnchess.online');
+    $mail->setFrom('abc@gmail.com','learnchess.online');  //enter email address of hosting site
 
-    $mail->addAddress('joelcrajudeveloper@gmail.com');
+    $mail->addAddress('learnchessonline64@gmail.com');
 
     $mail->isHTML(true);
 
@@ -38,7 +37,6 @@
 
     $mail->Subject = 'Demo Class for'.$name;
 
-    //$bodyContent = '<h1>How to send email from localhost using php</h1>'.$name;
     $bodyContent = '<p>Full Name: '.$name.
                     '<br>Student Age: '.$age. 
                     '<br>Email address: '.$email.
@@ -47,16 +45,15 @@
                     '<br>Message: '.$msg;
                     
     $mail->Body = $bodyContent;
-    //$mail->send();
     if(!$mail->send())
     {
-        //echo 'message could not be sent'.$mail->ErrorInfo;
+      
         echo "<script> alert('Form could not be submitted due to some error, Please try again later'); window.history.back(); </script>";
-        // echo "<h1>".$bodyContent."</h1>". $mail->ErrorInfo;
+     
     }
     else
     {
-        //echo 'message has been sent';
+      
         echo'<script type="text/javascript">alert("Form submitted successfully"); window.history.back();</script>';
         
     }
@@ -67,13 +64,13 @@
 
     $mail2->isSMTP();
     $mail2->Host = "smtp.gmail.com";
-    $mail2->Username = "joelcrajudeveloper@gmail.com";
-    $mail2->Password = "ijqnzsxenlwoyhtv";
+    $mail2->Username = "abc@gmail.com"; //enter the email address of hosting site within quotes
+    $mail2->Password = "password"; //enter email password
     $mail2->SMTPAuth = true;
     $mail2->SMTPSecure = 'tls';
     $mail2->Port = 587;
 
-    $mail2->setFrom('joelcrajudeveloper@gmail.com','learnchess.online');
+    $mail2->setFrom('abc@gmail.com','learnchess.online'); //enter the email address of hosting site within quotes
 
     $mail2->addAddress($email);
 
@@ -84,7 +81,6 @@
     $bodyContent = '<p>Thank you '.$name.' for contacting learnchess.online,
     we will get back to you shortly</p>';
     $mail2->Body = $bodyContent;
-    //$mail2->send();
     if(!$mail2->send())
     {
         //echo "<script> window.history.back(); alert('Form could not be submitted due to some error, Please try again later');</script>";
